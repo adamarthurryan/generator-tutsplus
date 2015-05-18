@@ -1,4 +1,4 @@
-# [<%= title %>]][published url]
+# [<%= title %>][published url]
 ## Instructor: [<%= instructor %>][instructor url]
 
 
