@@ -1,0 +1,20 @@
+{
+  "name": "generator-tutsplus",
+  "version": "0.1.0",
+  "description": "A generator for creating Tuts+ source code repositories.",
+  "main": "index.js",
+  "dependencies": {
+    "diacritics": "^1.2.1",
+    "yeoman-generator": "^0.19.2",
+    "yosay": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Brown",
+  "license": "BSD2",
+  "files": [
+    "app"
+  ]
+}
