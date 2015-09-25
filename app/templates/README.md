@@ -4,11 +4,22 @@
 
 [COURSE DESCRIPTION]
 
+
 ## Source Files Description
 
-[SOURCE DESCRIPTION]
-EXAMPLE: The source repository for this course contains folders for the sample code created in each lesson. Each lesson contains one or more complete Visual Studio projects, ready to run and to experiment with.
 
+This repository contains the source code for the completed course project.
+
+This repository contains the completed source code for the course project - a simple Ruby image gallery.
+
+This repository contains the source to each exercise and sample project that was built throughout the course.
+
+The source files contain the Node.js app we are going to use as an example application in this course. It uses MongoDB and Redis for data and session storage, as well as socket.io for real-time communication with the client.
+
+
+## 3rd-Party Content
+
+The following [] are sourced from [] and licensed under Creative Commons [CC BY-2.0](https://creativecommons.org/licenses/by/2.0/) or [CC BY-SA-2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
 ------
 
