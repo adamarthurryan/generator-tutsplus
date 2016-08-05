@@ -19,6 +19,16 @@ function urlize (string) {
 
 module.exports = generators.Base.extend({
 
+  constructor: function() {
+    generators.Base.apply(this, arguments)
+
+    this.argument('type', {type: String, optional: true, defaults: "course"})
+
+    //the type argument should be 'course' or 'tutorial'
+    if (this.type != 'course' && this.type != 'tutorial')
+      this.type = 'course'
+
+  }
 
   configuring: function() {
     //this.config.save();
@@ -26,7 +36,7 @@ module.exports = generators.Base.extend({
 
 
   initializing: function() {
-    this.log(yosay("Let's make a tuts+ repo!"));
+    this.log(yosay("Let's make a tuts+ "+this.type+" repo!"));
   },
 
   prompting: function() {
@@ -34,7 +44,7 @@ module.exports = generators.Base.extend({
 
       this.prompt([{
         name: 'title',
-        message: 'What is the name of the course?'
+        message: 'What is the name of the "+this.type+"?'
       }, {
         name: 'instructor',
         message: 'Who is the instructor?'
@@ -54,12 +64,15 @@ module.exports = generators.Base.extend({
         title: parameters.title,
         titleURL: urlize(parameters.title),
         instructor: parameters.instructor,
-        instructorURL: urlize(parameters.instructor)
+        instructorURL: urlize(parameters.instructor), 
       }
 
       this.fs.copy(this.sourceRoot()+'/LICENSE' , this.destinationRoot()+'/LICENSE')
 
-      this.fs.copyTpl(this.sourceRoot()+'/README.md' , this.destinationRoot()+'/README.md', templateContext)
+      if (this.type=='course')
+        this.fs.copyTpl(this.sourceRoot()+'/README.course.md' , this.destinationRoot()+'/README.md', templateContext)
+      if (this.type=='tutorial')
+        this.fs.copyTpl(this.sourceRoot()+'/README.tutorial.md' , this.destinationRoot()+'/README.md', templateContext)
   },
 
 });
