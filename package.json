@@ -1,6 +1,6 @@
 {
   "name": "generator-tutsplus",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A generator for creating Tuts+ source code repositories.",
   "main": "index.js",
   "repository": "https://github.com/adamarthurryan/generator-tutsplus.git",
