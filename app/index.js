@@ -28,7 +28,7 @@ module.exports = generators.Base.extend({
     if (this.type != 'course' && this.type != 'tutorial')
       this.type = 'course'
 
-  }
+  },
 
   configuring: function() {
     //this.config.save();
@@ -36,7 +36,7 @@ module.exports = generators.Base.extend({
 
 
   initializing: function() {
-    this.log(yosay("Let's make a tuts+ "+this.type+" repo!"));
+    this.log(yosay("Let's make a tuts "+this.type+" repo!"));
   },
 
   prompting: function() {
@@ -44,7 +44,7 @@ module.exports = generators.Base.extend({
 
       this.prompt([{
         name: 'title',
-        message: 'What is the name of the "+this.type+"?'
+        message: 'What is the name of the '+this.type+'?'
       }, {
         name: 'instructor',
         message: 'Who is the instructor?'
