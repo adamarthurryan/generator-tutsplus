@@ -23,7 +23,7 @@ The following [] are sourced from [] and licensed under Creative Commons [CC BY-
 
 ------
 
-These are source files for the Tuts+ course: [<%= title %>][published url]
+These are source files for the Envato Tuts+ course: [<%= title %>][published url]
 
 Available on [Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
 

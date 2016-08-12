@@ -1,4 +1,4 @@
-# Tuts+ Tutorial: [<%= title %>][published url]
+# Envato Tuts+ Tutorial: [<%= title %>][published url]
 ## Instructor: [<%= instructor %>][instructor url]
 
 
@@ -13,9 +13,9 @@ The following [] are sourced from [] and licensed under Creative Commons [CC BY-
 
 ------
 
-These are source files for the Tuts+ tutorial: [<%= title %>][published url]
+These are source files for the Envato Tuts+ tutorial: [<%= title %>][published url]
 
-Available on [Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
+Available on [Envato Tuts+](https://tutsplus.com). Teaching skills to millions worldwide.
 
 [published url]: [TUTORIAL URL]
 [instructor url]: https://tutsplus.com/authors/<%= instructorURL %>
